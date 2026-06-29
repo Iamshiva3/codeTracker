@@ -1,7 +1,0 @@
-target/
-backend/target/
-frontend/.DS_Store
-*.log
-.idea/
-.vscode/
-*.iml
