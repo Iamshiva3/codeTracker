@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeTrack - Authentication</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-body">
+    <div class="glass-container auth-container">
+        <h1 class="logo">CodeTrack.</h1>
+        <p class="subtitle">Elevate your competitive programming journey.</p>
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('login')">Login</button>
+            <button class="tab-btn" onclick="switchTab('signup')">Sign Up</button>
+        </div>
+
+        <form id="login-form" class="auth-form active-form">
+            <div class="input-group">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" required placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn primary-btn">Login</button>
+            <div id="login-error" class="error-message"></div>
+        </form>
+
+        <form id="signup-form" class="auth-form">
+            <div class="input-group">
+                <label for="signup-username">Username</label>
+                <input type="text" id="signup-username" required placeholder="Choose a username">
+            </div>
+            <div class="input-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" required placeholder="Choose a strong password">
+            </div>
+            <button type="submit" class="btn primary-btn">Sign Up</button>
+            <div id="signup-error" class="error-message"></div>
+            <div id="signup-success" class="success-message"></div>
+        </form>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>
