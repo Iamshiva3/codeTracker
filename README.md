@@ -1,26 +1,76 @@
-codeTracker
+# CodeTrack
 
-📌 Description
+CodeTrack is a simple full-stack coding tracker that helps students log their programming practice, view activity history, and receive AI-style suggestions.
 
-codeTracker is a full-stack web application designed to help developers track and manage coding-related activity/tasks. The project is structured as a backend + frontend application, with a Java-based server powering the core logic and a lightweight HTML/CSS/JavaScript client for the user interface.
+## Features
 
+- User authentication and signup/login
+- Log coding activity by date, platform, time spent, and problems solved
+- View recent activity history
+- See AI-style suggestions based on tracked activity
+- In-memory H2 database for local development
 
-Note: The original repository doesn't include a description or documentation, so the summary above is a best-effort interpretation based on the project name and structure. Update this section with the actual purpose/features of the app (e.g., tracking coding hours, tracking bugs/tasks, tracking progress on coding challenges, etc.) for accuracy.
+## Project Structure
 
+- backend/ - Spring Boot REST API and business logic
+- frontend/ - Static web UI for dashboard and authentication pages
 
+## Tech Stack
 
-🛠️ Tech Stack
+- Java 25
+- Spring Boot 3.2.5
+- Spring Security
+- Spring Data JPA
+- H2 Database
+- HTML/CSS/JavaScript
 
-LayerTechnologyBackendJavaFrontendHTML, CSS, JavaScriptStructureSeparate backend/ and frontend/ directories
+## Prerequisites
 
-📂 Project Structure
+- JDK 25
+- Maven
+- A modern browser
 
-codeTracker/
-├── backend/     # Java-based server-side logic
-├── frontend/    # HTML, CSS, and JavaScript client
-└── README.md
+## Running the Backend
 
-🚀 Getting Started
+From the project root:
+
+```bash
+cd backend
+mvn spring-boot:run
+```
+
+The backend runs on:
+
+- http://localhost:8081
+
+## Running the Frontend
+
+Open the frontend files directly in a browser, or serve the folder with a simple static server:
+
+```bash
+cd frontend
+python -m http.server 8000
+```
+
+Then open:
+
+- http://localhost:8000/index.html
+
+## Default Backend Configuration
+
+The backend uses an in-memory H2 database and is configured in:
+
+- backend/src/main/resources/application.properties
+
+## Notes
+
+- The application is intended for local development and demo use.
+- Authentication and JWT settings are currently configured in the backend properties file.
+
+## License
+
+This project is for educational/demo purposes.
+
 
 Prerequisites
 
